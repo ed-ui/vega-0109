@@ -44,10 +44,9 @@ a {
   background-image: url(../images1/bg-81.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   color: #fff;
   padding-bottom: 45px;
-
 }
 
 .header__top {
@@ -56,6 +55,13 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 45px;
+}
+
+.head-logo__img {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .header__top-name {
@@ -160,17 +166,22 @@ a {
 
 .social__link {
   margin: 0 5px;
-
 }
 
 .carousel-head__item-img {
-  width: 500px;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .header__images-1 {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
   position: absolute;
-  right: 144px;
+  right: 77px;
   top: 394px;
   z-index: 1;
 }
@@ -186,12 +197,6 @@ a {
   z-index: 10;
 }
 
-.carousel-head__item-img {
-  width: 100%;
-  height: 100%;
-}
-
-
 
 
 
@@ -203,28 +208,6 @@ a {
   padding-top: 140px;
   position: relative;
 }
-
-/* .title-1 {
-  color: #21062A;
-  font-size: 36px;
-  line-height: 53px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  position: relative;
-} */
-
-/* .title-1::after {
-  content: '';
-  width: 80px;
-  height: 3px;
-  background-color: #21062A;
-  position: absolute;
-  top: 20px;
-  margin-left: 20px;
-} */
-
-
 
 .services__inner {
   display: flex;
@@ -252,11 +235,6 @@ a {
   top: 20px;
   margin-left: 20px;
 }
-
-/* .title::after:nth-last-child(1) {
-  width: 200px;
-} */
-
 
 .services__content {
   width: 505px;
@@ -296,12 +274,13 @@ a {
   position: absolute;
   top: 707px;
   right: -148px;
-  box-sizing: border-box;
 }
 
 .services__img-1 {
   max-width: 70%;
-  max-height: 70%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .services__item {
@@ -312,7 +291,6 @@ a {
   padding: 10px 15px 10px 113px;
   position: relative;
   transition: all .5s;
-
 }
 
 .services__item::before {
@@ -354,8 +332,10 @@ a {
 }
 
 .carousel-1__item-img {
-  max-width: 449px;
-  max-height: 350px;
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
   border: solid 2px #164633;
 }
 
@@ -372,9 +352,6 @@ a {
   padding-top: 140px;
   position: relative;
 }
-
-
-
 
 .services2__inner {
   display: flex;
@@ -465,8 +442,10 @@ a {
 }
 
 .carousel-2__item-img {
-  max-width: 449px;
-  max-height: 350px;
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
   border: solid 2px #164633;
 }
 
@@ -558,7 +537,7 @@ a {
 
 
 .carousel__item-box {
-  border: 1px solid #C4C4C4;
+  /* border: 1px solid #C4C4C4; */
   padding: 6px 6px 16px 6px;
   text-align: center;
   transition: all .5s;
@@ -573,7 +552,10 @@ a {
 
 .carousel__item-img {
   max-width: 100%;
-  margin-bottom: 23px;
+  height: 270px;
+  object-fit: cover;
+  object-position: bottom;
+  border: solid 2px #164633;
 }
 
 .carousel__item-text {
@@ -654,6 +636,8 @@ a {
 .contact__image-ads {
   max-width: 100%;
   height: 500px;
+  object-fit: cover;
+  object-position: bottom;
   border: solid 2px #164633;
 }
 
@@ -693,6 +677,13 @@ a {
   padding: 10px 0 10px;
 }
 
+.foot-logo__img {
+  max-width: 12%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .footer__copy-num {
   font-size: 12px;
 }
@@ -726,6 +717,10 @@ a {
   }
 
   .services__img-1 {
+    display: none;
+  }
+
+  .carousel .slick-dots button {
     display: none;
   }
 
@@ -806,10 +801,6 @@ a {
 
 @media(max-width: 1024px) {
 
-  .logo__img {
-    width: 90px;
-  }
-
   .phone__city-name {
     font-size: 25px;
   }
@@ -876,7 +867,7 @@ a {
     display: block;
   }
 
-  .carousel-head__item-img {
+  .carousel-head__topbox {
     display: none;
   }
 
@@ -938,10 +929,6 @@ a {
     margin-bottom: 10px;
   }
 
-  .carousel-head__item-img {
-    display: none;
-  }
-
   .phone__city-name {
     font-size: 22px;
   }
@@ -982,21 +969,18 @@ a {
     display: none;
   }
 
-
-  .carousel .slick-dots button {
-    width: 10px;
-    margin-top: 50px;
-  }
 }
 
 @media(max-width: 610px) {
 
-  .logo__img {
+  .head-logo__img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 60px;
-    height: 55px;
   }
 
   .header__top {
@@ -1019,9 +1003,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
   }
-
 
   .phone_item {
     width: 200px;
@@ -1039,7 +1021,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-
   }
 
   .header__subtitle {
@@ -1049,7 +1030,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-
   }
 
   .services {
@@ -1094,9 +1074,18 @@ a {
     max-height: 100%;
   }
 
+  .foot-logo__img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
 }
 
 @media(max-width: 521px) {
+
+  
 
   .header__title {
     margin: 0 auto;
@@ -1158,10 +1147,6 @@ a {
     text-align: center;
   }
 
-  /* .title::after {
-    display: none;
-  } */
-
   .contacts__form {
     padding: 25px 10px 25px;
   }
@@ -1190,19 +1175,9 @@ a {
     font-size: 16px;
   }
 
-  /* .title-1 {
-    font-size: 32px;
-  } */
-
   .services__item::before {
     bottom: 30px;
   }
-
-  .carousel .slick-dots {
-    display: none;
-  }
-
-
 
 }
 
